@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kushtrim Qorri</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="img/kt-tasotyot2.png" alt="small-logo">
+			</div>
+			<ul>
+				<li class="link-item">link one</li>
+				<li class="link-item">link two</li>
+				<li class="link-item">link three</li>
+			</ul>
+		</div>
+		<div class="hero section">
+			<div class="title">
+				<img src="img/kt-tasotyot5.png" alt="">
+			</div>
+			<div class="subtext">Rakentamisen ammattilaiset</div>
+		</div>
+		<div class="about-us">
+			<div class="smaller-box">
+				<div class="content">
+					<div class="title">Rakentamisen ammattilaiset</div>
+					<div class="subtext">Rakennuspalvelu KT-Tasotyöt Oy on Helsinkiläinen rakennusalan yritys. Meidän palveluihin kuuluu julkisivusaneeraus, pintaremontit sekä sesongin vaihtuessa lumityöt. Toimintamme on laajalti Uusimaa, mutta mahdollisuudet aina laajentaa. Yrityksemme tarjoaa laadukasta rakennuspalvelua luotettavasti ja vahvalla ammattitaidolla.</div>
+				</div>
+				<img src="https://images.unsplash.com/photo-1607400201515-c2c41c07d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
+			</div>
+		</div>
+		<div class="services section">
+			<div class="title">Palvelumme</div>
+			<div class="subtext">Tarjoamme kustannustehokasta julkisivusaneerausta, niin pieniin kuin suurempiin hankkeisiin.
+				<span id="service-dots">...</span>
+				<div id="service-read-more">Julkisivusaneeraus on yrityksemme pääasiallinen toimialamme. Työmme kattaa esimerkiksi saumaukset, pesun ja maalauksen, rappaukset, levytykset ja pellitykset. Julkisivujen muutostyöt onnistuvat niin taloyhtiöille kuin liiketiloille.</div>
+			</div>
+			<button onclick="displayMore('service-')" id="service-Btn">Lue lisää</button>
+			<div class="service-icons">
+				<div class="icon">
+					<img src="img/icons/saumaus.png" alt="">
+					<div class="subtext">Saumaus</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/pesu.png" alt="">
+					<div class="subtext">Pesu ja Julkisivumaalaus</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/rappaus.png" alt="">
+					<div class="subtext">Rappaus</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/levytys.png" alt="">
+					<div class="subtext">Levytys</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/Pellitys.png" alt="">
+					<div class="subtext">Pellitys</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/Eristerappaus.png" alt="">
+					<div class="subtext">Eristerappaus</div>
+				</div>
+			</div>
+		</div>
+		<div class="surface-repair section">
+			<div class="title">Pintaremontit</div>
+			<div class="subtext">Toteutamme remonttisi toiveitasi kuunnellen sekä kokemustamme ja ammattitaitoamme käyttäen.
+				<span id="surface-repair-dots">...</span>
+				<div id="surface-repair-read-more">Tarjoamme laadukasta remontointia yksityis- ja yritysasiakkaille. Kaikkiin töihin sisältyy kohteen ilmainen arviointi, kirjallinen tarjous ja sopimus sekä lopputarkastus.</div>
+			</div>
+			<button onclick="displayMore('surface-repair-')" id="surface-repair-Btn">Lue lisää</button>
+			<div class="service-icons">
+				<div class="icon">
+					<img src="img/icons/pintaremotit.png" alt="">
+					<div class="subtext">Pintaremontit</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/sisätilaremontit.png" alt="">
+					<div class="subtext">Sisätilaremontit</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/terassit.png" alt="">
+					<div class="subtext">Terassit</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/maalaus.png" alt="">
+					<div class="subtext">Maalaus ja tasoitetyöt</div>
+				</div>
+			</div>
+		</div>
+		<div class="snow-work section">
+			<div class="title">Lumityöt</div>
+			<div class="subtext">KT-Tasotyöt Oy hoitaa erilaiset käsin tehtävät lumityöt yrityksille, taloyhtiöille ja kotitalouksille Uudellamaalla.
+				<span id="snow-work-dots">...</span>
+				<div id="snow-work-read-more">Meiltä hoituvat ripeästi ja turvallisesti lumen pudotukset katoilta, jääpuikkojen poisto räystäistä ja lumityöt pihamailta.</div>
+			</div>
+			<button onclick="displayMore('snow-work-')" id="snow-work-Btn">Lue lisää</button>
+			<div class="service-icons">
+				<div class="icon">
+					<img src="img/icons/lumen-pudotus.png" alt="">
+					<div class="subtext">Lumen Pudotus</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/jääpuikkojen-poisto.png" alt="">
+					<div class="subtext">jääpuikkojen poisto</div>
+				</div>
+				<div class="icon">
+					<img src="img/icons/lumityöt.png" alt="">
+					<div class="subtext">Lumityöt pihamailla</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer section">
+			<div>KT-Tasotyöt</div>
+			<div>Tammistonkatu 7 B 19 - 01520 - VANTAA</div>
+			<div>Y-tunnus 2349306-3</div>
+			<div>
+			 <img src="img/icons/puhelin.png" alt="">
+				045 647 5688
+			</div>
+			<div>
+				<img src="img/icons/email.png" alt="">
+				kt.tasotyot.oy@gmail.com</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
