@@ -99,7 +99,7 @@ img {
 }
 
 .about-us img {
-	max-width: 800px;
+	max-width: 600px;
 	border-radius: 25px;
 }
 
@@ -137,8 +137,8 @@ img {
 }
 
 .icon {
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
 	text-align: center;
 }
 
