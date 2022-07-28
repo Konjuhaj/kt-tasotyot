@@ -33,9 +33,9 @@ button {
 .header {
 	display: flex;
 	background-color: #f4a32e;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 12px 200px;
+	padding: 5px 200px;
 }
 
 .logo {
