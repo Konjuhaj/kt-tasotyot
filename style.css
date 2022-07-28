@@ -27,10 +27,6 @@ button {
 	border-radius: 10px;
 }
 
-img {
-	height: 100%;
-	width: auto;
-}
 
 /* CLASS SELECTORS */
 
@@ -199,8 +195,13 @@ img {
 	gap: 48px;
 	text-align:justify;
 	align-items: center;
+	justify-content: center;
 	margin-top: 50px;
 	flex-wrap: wrap;
+}
+
+.smaller-box .content {
+	max-width: 800px;
 }
 
 .hero {
