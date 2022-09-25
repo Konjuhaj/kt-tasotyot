@@ -1,340 +1,373 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kushtrim Qorri</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-v2.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>Kushtrim Qorri</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="img/kt-tasotyot2.png" alt="small-logo" />
+      </div>
+      <ul>
+        <li>
+          <div>
+            <a class="option" href="index.html"> OPTION 1 </a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="option" href="option2.html">OPTION 2</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="hero section">
+      <div class="title">
+        <img src="img/kt-tasotyot5.png" alt="" />
+      </div>
+      <div class="subtext">Rakentamisen ammattilaiset</div>
+    </div>
+    <div class="about-us">
+      <div class="smaller-box">
+        <div class="content">
+          <div class="title">
+            Rakentamisen ammattilaiset
+            <div class="spacer"></div>
+            <div class="underline"></div>
+          </div>
+          <div class="subtext">
+            Rakennuspalvelu KT-Tasotyöt Oy on Helsinkiläinen rakennusalan
+            yritys. Meidän palveluihin kuuluu julkisivusaneeraus, pintaremontit
+            sekä sesongin vaihtuessa lumityöt. Toimintamme on laajalti Uusimaa,
+            mutta mahdollisuudet aina laajentaa. Yrityksemme tarjoaa laadukasta
+            rakennuspalvelua luotettavasti ja vahvalla ammattitaidolla.
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1607400201515-c2c41c07d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="services section">
+      <div class="title">
+        Palvelumme
+        <div class="spacer"></div>
+        <div class="underline"></div>
+      </div>
+      <div class="subtext">
+        Tarjoamme kustannustehokasta julkisivusaneerausta, niin pieniin kuin
+        suurempiin hankkeisiin. Julkisivusaneeraus on yrityksemme pääasiallinen
+        toimialamme. Työmme kattaa esimerkiksi saumaukset, pesun ja maalauksen,
+        rappaukset, levytykset ja pellitykset. Julkisivujen muutostyöt
+        onnistuvat niin taloyhtiöille kuin liiketiloille.
+      </div>
 
-<body>
-	<div class="header">
-		<div class="logo">
-			<img src="img/kt-tasotyot2.png" alt="small-logo">
-		</div>
-		<!--
-			<ul>
-				<li class="link-item">link one</li>
-				<li class="link-item">link two</li>
-				<li class="link-item">link three</li>
-			</ul> -->
-	</div>
-	<div class="hero section">
-		<div class="title">
-			<img src="img/kt-tasotyot5.png" alt="">
-		</div>
-		<div class="subtext">Rakentamisen ammattilaiset</div>
-	</div>
-	<div class="about-us">
-		<div class="smaller-box">
-			<div class="content">
-				<div class="title">Rakentamisen ammattilaiset</div>
-				<div class="subtext">Rakennuspalvelu KT-Tasotyöt Oy on Helsinkiläinen rakennusalan yritys. Meidän
-					palveluihin kuuluu julkisivusaneeraus, pintaremontit sekä sesongin vaihtuessa lumityöt. Toimintamme
-					on laajalti Uusimaa, mutta mahdollisuudet aina laajentaa. Yrityksemme tarjoaa laadukasta
-					rakennuspalvelua luotettavasti ja vahvalla ammattitaidolla.</div>
-			</div>
-			<img src="https://images.unsplash.com/photo-1607400201515-c2c41c07d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-				alt="">
-		</div>
-	</div>
-	<div class="services section">
-		<div class="title">Palvelumme</div>
-		<div class="subtext">Tarjoamme kustannustehokasta julkisivusaneerausta, niin pieniin kuin suurempiin
-			hankkeisiin.
-			<span id="service-dots">...</span>
-			<div id="service-read-more">Julkisivusaneeraus on yrityksemme pääasiallinen toimialamme. Työmme kattaa
-				esimerkiksi saumaukset, pesun ja maalauksen, rappaukset, levytykset ja pellitykset. Julkisivujen
-				muutostyöt onnistuvat niin taloyhtiöille kuin liiketiloille.</div>
-		</div>
-		<button onclick="displayMore('service-')" id="service-Btn">Lue lisää</button>
-		<div class="container">
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/saumaus.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Saumaus</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/pesu.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">pesu ja Julkisivumaalaus</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/rappaus.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Rappaus</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/levytys.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Levytys</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/Pellitys.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Pellitys</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/Eristerappaus.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Eristerappaus</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="surface-repair section">
-		<div class="title">Pintaremontit</div>
-		<div class="subtext">Toteutamme remonttisi toiveitasi kuunnellen sekä kokemustamme ja ammattitaitoamme käyttäen.
-			<span id="surface-repair-dots">...</span>
-			<div id="surface-repair-read-more">Tarjoamme laadukasta remontointia yksityis- ja yritysasiakkaille.
-				Kaikkiin töihin sisältyy kohteen ilmainen arviointi, kirjallinen tarjous ja sopimus sekä lopputarkastus.
-			</div>
-		</div>
-		<button onclick="displayMore('surface-repair-')" id="surface-repair-Btn">Lue lisää</button>
+      <div class="items">
+        <div class="service2">
+          <img class="hero" src="img/services/Saumaus.jpeg" alt="" />
+          <h5>Saumaus</h5>
+          <div class="subtext2">
+            Hyvin tehty elementtisaumaus on olennainen osa kiinteistön
+            julkisivun kestävää rakennetta.
+            <span id="saumaus-dots">...</span>
+            <div id="saumaus-read-more">
+              Julkisivuelementtien väliin tarvitaan sauma, joka joustaa. Tällöin
+              estetään sääolosuhteiden vaikutukset talorakenteisiin sekä myös
+              kosteuden pääsy elementtirakenteisiin.
+            </div>
+          </div>
+          <button onclick="displayMore('saumaus-')" id="saumaus-Btn">
+            Lue lisää
+          </button>
+        </div>
 
+        <div class="service2">
+          <img src="img/services/Julkissivu pesu .webp" alt="" />
+          <h5>Julkissivupesu ja -maalaus</h5>
+          <div class="subtext2">
+            Julkisivujen huoltopesut luotettavasti ja laadukkaasti
+            ammattilaisten tekemänä.
+            <span id="pesu-dots">...</span>
+            <div id="pesu-read-more">
+              Julkisivupesu on nopea ja edullinen tapa pitää kiinteistö siistin
+              näköisenä. Etenkin maalattujen pintojen maalausväliä voi helposti
+              pidentää vuosilla, kun julkisivu välillä pestään..
+            </div>
+          </div>
+          <button onclick="displayMore('pesu-')" id="pesu-Btn">
+            Lue lisää
+          </button>
+        </div>
 
-		<div class="container">
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/maalaus.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Maalaus</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/terassit.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Terassit</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/sisatilaremontit.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Sisätilaremontit</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="snow-work section">
-		<div class="title">Lumityöt</div>
-		<div class="subtext">KT-Tasotyöt Oy hoitaa erilaiset käsin tehtävät lumityöt yrityksille, taloyhtiöille ja
-			kotitalouksille Uudellamaalla.
-			<span id="snow-work-dots">...</span>
-			<div id="snow-work-read-more">Meiltä hoituvat ripeästi ja turvallisesti lumen pudotukset katoilta,
-				jääpuikkojen poisto räystäistä ja lumityöt pihamailta.</div>
-		</div>
-		<button onclick="displayMore('snow-work-')" id="snow-work-Btn">Lue lisää</button>
+        <div class="service2">
+          <img src="img/services/rappaus.webp" alt="" />
+          <h5>Rappaus</h5>
+          <div class="subtext2">
+            Meiltä laadukkaat rappaustyöt monien vuosien kokemuksella.
+            <span id="rappaus-dots">...</span>
+            <div id="rappaus-read-more">
+              Jokainen rakennus tarvitsee julkisivuunsa sopivan pinnoitteen,
+              joka suojaa rakennusta ympäristön haitoilta ja parhaimmillaan
+              tekee kiinteistöstäsi koko naapuruston ylpeyden aiheen.
+            </div>
+          </div>
+          <button onclick="displayMore('rappaus-')" id="rappaus-Btn">
+            Lue lisää
+          </button>
+        </div>
+      </div>
+    </div>
 
-		<!-- Testing new icons -->
-		<div class="container">
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/lumen-pudotus.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Lumen pudotus</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/jaapuikkojen-poisto.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">jääpuikkojen poisto</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<div class="content">
-						<div class="icon">
-							<img src="img/icons/lumityot.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="face face2">
-					<div class="content">
-						<h3>
-							<a href="#">Lumityöt</a>
-						</h3>
-						<p>This is where we explain the service shortly.
-							In short it will be a good service that will benefit
-							everyone involved with it and I cannot recommend it enough
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="section recommendation">
+      <div class="bg-image"></div>
+      <div class="flex">
+        <div class="info">
+          <h1 class="orange">100+</h1>
+          <h2 class="white">tyytyväistä asiakasta</h2>
+        </div>
+        <div class="info">
+          <h1 class="orange">10+</h1>
+          <h2 class="white">vuoden kokemus</h2>
+        </div>
+        <div class="info">
+          <h1 class="orange">389</h1>
+          <h2 class="white">onnistunutta projektia</h2>
+        </div>
+      </div>
+    </div>
 
+    <div class="surface-repair section">
+      <div class="title">
+        Muut palvelut
+        <div class="spacer"></div>
+        <div class="underline"></div>
+      </div>
+      <div class="subtext">
+        Lisäksi tarjoamme kokonaisvaltaista remottia muihinkin tarpeisiin.
+      </div>
 
-	<div class="footer section">
-		<div>KT-Tasotyöt</div>
-		<div>Tammistonkatu 7 B 19 - 01520 - VANTAA</div>
-		<div>Y-tunnus 2349306-3</div>
-		<div>
-			<img src="img/icons/puhelin.png" alt="">
-			045 647 5688
-		</div>
-		<div>
-			<img src="img/icons/email.png" alt="">
-			kt.tasotyot.oy@gmail.com
-		</div>
-	</div>
-	<script src="app.js"></script>
-</body>
+      <div class="container">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <div class="icon-content">
+                  <img src="img/bw-icons/pellitys.png" alt="" />
+                  <div class="icon-title">Pellitys</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                This is where we explain the service shortly. In short it will
+                be a good service that will benefit everyone involved with it
+                and I cannot recommend it enough
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <div class="icon-content">
+                  <img src="img/bw-icons/julkissivupesu_2.png" alt="" />
+                  <div class="icon-title">Levytys</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                This is where we explain the service shortly. In short it will
+                be a good service that will benefit everyone involved with it
+                and I cannot recommend it enough
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <div class="icon-content">
+                  <img src="img/bw-icons/eristerappaus.png" alt="" />
+                  <div class="icon-title">Eristerappaus</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                This is where we explain the service shortly. In short it will
+                be a good service that will benefit everyone involved with it
+                and I cannot recommend it enough
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <div class="icon-content">
+                  <img src="img/bw-icons/Maalaus.png" alt="" />
+                  <div class="icon-title">Maalaus</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                This is where we explain the service shortly. In short it will
+                be a good service that will benefit everyone involved with it
+                and I cannot recommend it enough
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <div class="icon-content">
+                  <img src="img/bw-icons/terassi.png" alt="" />
+                  <div class="icon-title">Terassit</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                This is where we explain the service shortly. In short it will
+                be a good service that will benefit everyone involved with it
+                and I cannot recommend it enough
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <div class="icon-content">
+                  <img src="img/bw-icons/sisätilaremontti.png" alt="" />
+                  <div class="icon-title">Sisätilaremontit</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                This is where we explain the service shortly. In short it will
+                be a good service that will benefit everyone involved with it
+                and I cannot recommend it enough
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="other-services column">
+          <div class="service3">
+            <div class="icon">
+              <img src="img/icons/lumityöt.png" alt="" />
+            </div>
+            <div class="content-wrap">
+              <h2>Lumityöt</h2>
+              <p>
+                Lumityöt hoituvat oikealla tekniikalla, pitävillä kengänpohjilla
+                ja oikeanlaisilla välineillä. Erilaisia lumitöitä on tarjolla
+                etenkin talvisin ja niitä voidaan tehdä traktorilla, mönkijällä
+                tai vaikkapa käsin tilanteesta riippuen.
+              </p>
+            </div>
+          </div>
+          <div class="service3">
+            <div class="icon">
+              <img src="img/icons/jääpuikkojen-poisto.png" alt="" />
+            </div>
+            <div class="content-wrap">
+              <h2>Jääpuikkojen poisto</h2>
+              <p>
+                Lumen pudotus katolta ja vaarallisten jääpuikkojen poisto
+                talvisin tulee tehdä ajoissa, ettei niistä aiheudu vaaraa
+                ohikulkijoille tai etteivät ne aiheuta vahinkoja esimerkiksi
+                autoille.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="other-services column">
+          <div class="service3">
+            <div class="icon">
+              <img src="img/icons/lumen-pudotus.png" alt="" />
+            </div>
+            <div class="content-wrap">
+              <h2>Lumen pudotus</h2>
+              <p>
+                Turvallisin ja kätevin tapa pudottaa lumi katolta on tarttua
+                teleskooppivartiseen lumenpudottimeen, jolla voi ylettyä maasta
+                jopa kuuteen metriin asti.
+              </p>
+            </div>
+          </div>
+          <div class="service3">
+            <div class="icon">
+              <img src="img/icons/terassit.png" alt="" />
+            </div>
+            <div class="content-wrap">
+              <h2>Ulkotyöt</h2>
+              <p>
+                Puhdistamme pihat ja kuljetamme suuretkin määrät lunta pois
+                nopeasti, niin kerrostaloista kuin, varastoista,
+                urheiluhalleista tai julkisista rakennuksista jopa vuorokauden
+                varoajalla.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="person column">
+          <img src="img/services/happy-builder.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer section">
+      <div class="title">
+        Ota yhteyttä
+        <div class="spacer"></div>
+        <div class="underline"></div>
+      </div>
+      <div class="subtext">
+        Tarjoamme ilmaisen konsultoinnin ja tarjouksen. Ota yhteyttä niin voimme
+        yhdessä karkoittaa teidän tarpeet
+      </div>
+      <div>KT-Tasotyöt</div>
+      <div>Tammistonkatu 7 B 19 - 01520 - VANTAA</div>
+      <div>Y-tunnus 2349306-3</div>
+      <div>
+        <img src="img/icons/puhelin.png" alt="" />
+        045 647 5688
+      </div>
+      <div>
+        <img src="img/icons/email.png" alt="" />
+        kt.tasotyot.oy@gmail.com
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
