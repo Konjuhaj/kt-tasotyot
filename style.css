@@ -35,7 +35,6 @@ button {
   background-color: #f4a32e;
   justify-content: space-around;
   align-items: center;
-  padding: 5px 200px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -63,12 +62,16 @@ button {
 .smaller-box {
   display: flex;
   flex-direction: row;
-  max-width: 1500px;
   gap: 48px;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .smaller-box {
+    flex-wrap: wrap;
+  }
 }
 
 .smaller-box .content {
@@ -81,6 +84,23 @@ button {
   min-height: 30rem;
   height: 50%;
   background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.hero div {
+  z-index: 1;
+  text-shadow: 3px 3px #000;
+}
+
+.hero > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .hero .title,
@@ -94,6 +114,7 @@ button {
 
 .hero .subtext {
   font-size: 48px;
+  font-weight: 700;
 }
 
 .about-us {
@@ -102,25 +123,13 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  padding: 50px;
+  padding: 50px 200px;
 }
 
 .about-us img {
   max-width: 600px;
   border-radius: 25px;
   margin: 0 auto;
-}
-
-.bg-image {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  z-index: 0;
-  background: #000;
-  opacity: 60%;
 }
 
 .surface-repair {
@@ -147,6 +156,7 @@ button {
 .subtext {
   font-size: large;
   max-width: 800px;
+  font-weight: 500;
 }
 
 .icon {
@@ -207,10 +217,12 @@ button {
 .container {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 40px;
   flex-wrap: wrap;
   font-size: small;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .container .card {
@@ -238,7 +250,6 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 80px;
   transition: 0.7s;
   color: #fff;
@@ -269,12 +280,6 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  transform: translateY(50px);
-}
-
-.container .card:hover .face.face1 {
-  background: #ff0057;
-  transform: translateY(0px);
 }
 
 .container .card .face.face1 .content {
@@ -283,46 +288,8 @@ button {
   border-radius: 15px;
 }
 
-.container .card:hover .face.face1 .content {
-  opacity: 1;
-}
-
 .container .card .face.face1 .content i {
   max-width: 100px;
-}
-
-.container .card .face.face2 {
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-  transform: translateY(-100px);
-  border-radius: 15px;
-}
-
-.container .card:hover .face.face2 {
-  transform: translateY(0);
-}
-
-.container .card .face.face2 .content p {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #414141;
-  font-size: 10px;
-}
-
-.container .card .face.face2 .content h3 {
-  margin: 0 0 10px 0;
-  padding: 0;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  color: #414141;
 }
 
 .container a {
@@ -341,4 +308,60 @@ button {
 
 .icon-title {
   width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.wrapper div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  margin: auto;
+}
+
+.wrapper div a::after {
+  position: absolute;
+  content: "\A";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: 0;
+}
+
+.wrapper div:hover a::after {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper div h3 {
+  color: #f1f1f1;
+  position: absolute;
+  transform: translateY(-70px);
+  font-size: 800;
+  transition: 0.4s;
+  opacity: 0%;
+  z-index: 1;
+}
+
+.wrapper div:hover h3 {
+  transform: translateY(0);
+  opacity: 100%;
+}
+
+.wrapper div a img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
 }
