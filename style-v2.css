@@ -5,17 +5,17 @@
 }
 
 .items > div:nth-child(1) {
-  background-image: url("img/services/Saumaus.jpeg");
+  background-image: url("./img/services/Saumaus.jpeg");
   background-size: cover;
 }
 
 .items > div:nth-child(2) {
-  background-image: url("img/services/julkissivupesu_2.jpeg");
+  background-image: url("./img/services/julkissivupesu_2.jpeg");
   background-size: cover;
 }
 
 .items > div:nth-child(3) {
-  background-image: url("img/services/rappaus.jpeg");
+  background-image: url("./img/services/rappaus.jpeg");
   background-size: cover;
 }
 
