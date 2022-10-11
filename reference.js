@@ -30,7 +30,7 @@ files.forEach((file) => {
   const div = document.createElement("div");
   const a = document.createElement("a");
   const img = document.createElement("img");
-  img.src = "img/references/" + file;
+  img.src = "../img/references/" + file;
   console.log(img.getAttribute.src);
   a.appendChild(img);
   div.appendChild(a);

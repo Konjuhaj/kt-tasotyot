@@ -365,3 +365,11 @@ button {
   object-fit: cover;
   display: block;
 }
+
+.wrapper > a {
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  padding: 12px 24px;
+}
