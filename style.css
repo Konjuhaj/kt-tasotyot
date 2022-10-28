@@ -386,7 +386,6 @@ button {
   display: flex;
   justify-content: center;
   height: 800px;
-  width: 1000px;
 }
 
 .grid-wrapper .image-comp-container {
