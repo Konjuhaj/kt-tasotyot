@@ -312,7 +312,7 @@ button {
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -320,7 +320,7 @@ button {
   flex-wrap: wrap;
 }
 
-.wrapper div {
+.wrapper .wrapper-item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -372,4 +372,87 @@ button {
   color: black;
   font-size: larger;
   padding: 12px 24px;
+}
+
+.grid-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 300px;
+  gap: 24px;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 1000px;
+}
+
+.grid-wrapper .image-comp-container {
+  position: relative;
+  height: 200px;
+}
+
+.main-wrapper .image-comp-container {
+  position: relative;
+  height: 400px;
+}
+
+.img-comp-img {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+
+  width: 40px;
+  height: 40px;
+  background-color: #2196f3;
+  opacity: 80%;
+  border-radius: 50%;
+}
+
+.main-wrapper .img-comp-overlay {
+  animation-name: shift;
+}
+
+.main-wrapper .img-comp-slider {
+  animation-name: move;
+}
+
+.main-wrapper .img-comp-slider,
+.main-wrapper .img-comp-overlay {
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shift {
+  33% {
+    width: 420px;
+  }
+  66% {
+    width: 620px;
+  }
+}
+
+@keyframes move {
+  33% {
+    left: 400px;
+  }
+  66% {
+    left: 600px;
+  }
 }
