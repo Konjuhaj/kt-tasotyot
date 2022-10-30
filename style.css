@@ -427,7 +427,7 @@ button {
   position: absolute;
   z-index: 9;
   cursor: ew-resize;
-  content: url(/img/icons/sliders.png);
+  content: url("/img/icons/sliders.png");
   filter: invert(100%);
 
   width: 40px;
@@ -460,19 +460,19 @@ button {
 
 @keyframes shift {
   33% {
-    width: 420px;
+    width: 320px;
   }
   66% {
-    width: 620px;
+    width: 520px;
   }
 }
 
 @keyframes move {
   33% {
-    left: 400px;
+    left: 300px;
   }
   66% {
-    left: 600px;
+    left: 500px;
   }
 }
 @keyframes show {
