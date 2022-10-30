@@ -427,7 +427,7 @@ button {
   position: absolute;
   z-index: 9;
   cursor: ew-resize;
-  content: url("/img/icons/sliders.png");
+  content: url("./img/icons/sliders.png");
   filter: invert(100%);
 
   width: 40px;
