@@ -1,0 +1,133 @@
+.grid-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
+  gap: 24px;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+.grid-wrapper .image-comp-container {
+  position: relative;
+  height: 340px;
+  width: 400px;
+}
+
+.main-wrapper .image-comp-container {
+  position: relative;
+  height: 400px;
+}
+
+.main-wrapper .img-comp-slider::after {
+  content: url("./img/icons/finger.png");
+  position: absolute;
+  left: -100%;
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+}
+.main-wrapper .img-comp-slider::after {
+  animation-name: show;
+}
+
+.img-comp-img {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  content: url("../img/icons/sliders.png");
+  filter: invert(100%);
+
+  width: 40px;
+  height: 40px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.main-wrapper .img-comp-overlay {
+  animation-name: shift;
+}
+
+.main-wrapper .img-comp-slider {
+  animation-name: move;
+}
+
+.main-wrapper .img-comp-slider,
+.main-wrapper .img-comp-overlay,
+.main-wrapper .img-comp-slider::after {
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.before-after {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid-wrapper .before-after h1 {
+  font-size: var(--body-font-size);
+}
+
+.img-container-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* '********** REFERENCE WRAPPER ************/
+
+.reference-wrapper li {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  text-align: start;
+  column-gap: var(--grid-gap-spacing);
+}
+
+.reference-wrapper li:nth-child(odd) {
+  background-color: rgba(255, 192, 1, 0.395);
+}
+
+@keyframes shift {
+  33% {
+    width: 320px;
+  }
+  66% {
+    width: 520px;
+  }
+}
+
+@keyframes move {
+  33% {
+    left: 300px;
+  }
+  66% {
+    left: 500px;
+  }
+}
+@keyframes show {
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+}

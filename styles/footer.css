@@ -1,0 +1,77 @@
+label {
+  text-align: left;
+}
+
+fieldset {
+  padding: 24px;
+}
+
+input {
+  all: unset;
+  padding: 5px;
+
+  border: solid var(--form-border-size) lightgrey;
+  border-radius: var(--form-border-radius);
+  background-color: white;
+  text-align: left;
+}
+
+input:focus {
+  border-color: var(--color-secondary);
+}
+
+textarea {
+  all: unset;
+  background-color: white;
+  text-align: left;
+  padding: 5px;
+
+  border-radius: var(--form-border-radius);
+  border: solid var(--form-border-size) white;
+}
+
+textarea:focus {
+  border-color: var(--color-secondary);
+}
+
+/* #####################   Class Selectors   ##################### */
+
+.contact-form {
+  display: grid;
+  grid-template-areas:
+    "name		message"
+    "mail		message"
+    "phone		message";
+  gap: 12px;
+}
+
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: mail;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.message {
+  grid-area: message;
+}
+
+.message-input {
+  height: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.slideshow {
+  display: flex;
+  flex-direction: row;
+}

@@ -13,6 +13,20 @@ function getImageContainer(index) {
   let imageContainer = document.createElement("div");
   imageContainer.classList.add("image-comp-container");
 
+  let comparisonText = document.createElement("div");
+  comparisonText.classList.add("before-after");
+  let beforeText = document.createElement("h1");
+  let afterText = document.createElement("h1");
+  beforeText.innerText = "Ennen";
+  afterText.innerText = "Jälkeen";
+  comparisonText.appendChild(beforeText);
+  comparisonText.appendChild(afterText);
+  imageContainer.appendChild(comparisonText);
+
+  let address = document.createElement("div");
+  address.classList.add("address-line");
+  address.innerText = "Alberinkatu 1, 00100 Helsinki";
+
   let imageBefore = document.createElement("div");
   imageBefore.classList.add("img-comp-img");
   imageBefore.classList.add("img-comp-overlay");
@@ -32,7 +46,12 @@ function getImageContainer(index) {
 
   imageContainer.appendChild(imageAfter);
   imageContainer.appendChild(imageBefore);
-  return imageContainer;
+  let containerWrapper = document.createElement("div");
+  containerWrapper.appendChild(imageContainer);
+  containerWrapper.classList.add("img-container-wrapper");
+
+  containerWrapper.appendChild(address);
+  return containerWrapper;
 }
 
 function initComparison() {
@@ -58,7 +77,7 @@ function initComparison() {
     slider.classList.add("img-comp-slider");
     img.parentElement.insertBefore(slider, img);
 
-    slider.style.top = h / 2 - slider.offsetHeight / 2 + "px";
+    slider.style.top = 165 + "px";
 
     slider.style.left = w / 2 - slider.offsetWidth / 2 + "px";
 

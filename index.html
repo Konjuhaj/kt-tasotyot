@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <title>Kushtrim Qorri</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style-v2.css" />
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/typography.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/boxes.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Hammersmith+One" />
 </head>
@@ -60,7 +64,6 @@
   <div class="section">
     <div class="title">
       Palvelumme
-      <div class="spacer"></div>
       <div class="underline"></div>
     </div>
     <div class="subtext">
@@ -132,7 +135,6 @@
   <div class="section">
     <div class="title">
       Referenssit
-      <div class="spacer"></div>
       <div class="underline"></div>
     </div>
     <div class="wrapper">
@@ -145,7 +147,7 @@
       <div class="wrapper-item">
         <h3>Parketti ja laminaatti</h3>
         <a href="pages/references.html">
-          <img src="img/references/IMG_7701.jpeg" alt="">
+          <img src="img/references/fbbe1018-8bf2-4b24-900d-497123c80d44.jpeg" alt="">
         </a>
       </div>
       <div class="wrapper-item">
@@ -154,15 +156,14 @@
           <img src="img/references/4547f775-646c-4d37-8d99-86707bdd40c1.jpeg" alt="">
         </a>
       </div>
-      <a href="pages/references.html"><button>Referenssit</button></a>
     </div>
+    <a href="pages/references.html"><button>Referenssit</button></a>
   </div>
 
   <div class="surface-repair section">
     <div class="title">
       Muut palvelut
-      <div class="spacer"></div>
-      <div class="underline"></div>
+      <div class="underline border-white"></div>
     </div>
     <div class="subtext">
       Lisäksi tarjoamme kokonaisvaltaista remottia muihinkin tarpeisiin.
@@ -205,7 +206,8 @@
               <div class="icon">
                 <div class="icon-content">
                   <img src="img/bw-icons/eristerappaus.png" alt="" />
-                  <div class="icon-title">Eristerappaus</div>
+                  <div class="icon-title">Eriste-
+                    rappaus</div>
                 </div>
               </div>
             </div>
@@ -250,7 +252,8 @@
               <div class="icon">
                 <div class="icon-content">
                   <img src="img/bw-icons/sisatilaremontti.png" alt="" />
-                  <div class="icon-title">Sisätilaremontit</div>
+                  <div class="icon-title">Sisätila-
+                    remontit</div>
                 </div>
               </div>
             </div>
@@ -259,67 +262,63 @@
       </a>
     </div>
 
-    <div class="row">
-      <div class="other-services column">
-        <div class="service3">
-          <div class="icon">
-            <img src="img/icons/lumityot.png" alt="" />
-          </div>
-          <div class="content-wrap">
-            <h2>Lumityöt</h2>
-            <p>
-              Lumityöt hoituvat oikealla tekniikalla, pitävillä kengänpohjilla
-              ja oikeanlaisilla välineillä. Erilaisia lumitöitä on tarjolla
-              etenkin talvisin ja niitä voidaan tehdä traktorilla, mönkijällä
-              tai vaikkapa käsin tilanteesta riippuen.
-            </p>
-          </div>
+    <div class="grid-container">
+      <div class="service-content1">
+        <div class="icon">
+          <img src="img/icons/lumityot.png" alt="" />
         </div>
-        <div class="service3">
-          <div class="icon">
-            <img src="img/icons/jaapuikkojen-poisto.png" alt="" />
-          </div>
-          <div class="content-wrap">
-            <h2>Jääpuikkojen poisto</h2>
-            <p>
-              Lumen pudotus katolta ja vaarallisten jääpuikkojen poisto
-              talvisin tulee tehdä ajoissa, ettei niistä aiheudu vaaraa
-              ohikulkijoille tai etteivät ne aiheuta vahinkoja esimerkiksi
-              autoille.
-            </p>
-          </div>
+        <div class="content-wrap">
+          <h2>Lumityöt</h2>
+          <p>
+            Lumityöt hoituvat oikealla tekniikalla, pitävillä kengänpohjilla
+            ja oikeanlaisilla välineillä. Erilaisia lumitöitä on tarjolla
+            etenkin talvisin ja niitä voidaan tehdä traktorilla, mönkijällä
+            tai vaikkapa käsin tilanteesta riippuen.
+          </p>
         </div>
       </div>
-      <div class="other-services column">
-        <div class="service3">
-          <div class="icon">
-            <img src="img/icons/lumen-pudotus.png" alt="" />
-          </div>
-          <div class="content-wrap">
-            <h2>Lumen pudotus</h2>
-            <p>
-              Turvallisin ja kätevin tapa pudottaa lumi katolta on tarttua
-              teleskooppivartiseen lumenpudottimeen, jolla voi ylettyä maasta
-              jopa kuuteen metriin asti.
-            </p>
-          </div>
+      <div class="service-content2">
+        <div class="icon">
+          <img src="img/icons/jaapuikkojen-poisto.png" alt="" />
         </div>
-        <div class="service3">
-          <div class="icon">
-            <img src="img/icons/terassit.png" alt="" />
-          </div>
-          <div class="content-wrap">
-            <h2>Ulkotyöt</h2>
-            <p>
-              Puhdistamme pihat ja kuljetamme suuretkin määrät lunta pois
-              nopeasti, niin kerrostaloista kuin, varastoista,
-              urheiluhalleista tai julkisista rakennuksista jopa vuorokauden
-              varoajalla.
-            </p>
-          </div>
+        <div class="content-wrap">
+          <h2>Jääpuikkojen poisto</h2>
+          <p>
+            Lumen pudotus katolta ja vaarallisten jääpuikkojen poisto
+            talvisin tulee tehdä ajoissa, ettei niistä aiheudu vaaraa
+            ohikulkijoille tai etteivät ne aiheuta vahinkoja esimerkiksi
+            autoille.
+          </p>
         </div>
       </div>
-      <div class="person column">
+      <div class="service-content3">
+        <div class="icon">
+          <img src="img/icons/lumen-pudotus.png" alt="" />
+        </div>
+        <div class="content-wrap">
+          <h2>Lumen pudotus</h2>
+          <p>
+            Turvallisin ja kätevin tapa pudottaa lumi katolta on tarttua
+            teleskooppivartiseen lumenpudottimeen, jolla voi ylettyä maasta
+            jopa kuuteen metriin asti.
+          </p>
+        </div>
+      </div>
+      <div class="service-content4">
+        <div class="icon">
+          <img src="img/icons/terassit.png" alt="" />
+        </div>
+        <div class="content-wrap">
+          <h2>Ulkotyöt</h2>
+          <p>
+            Puhdistamme pihat ja kuljetamme suuretkin määrät lunta pois
+            nopeasti, niin kerrostaloista kuin, varastoista,
+            urheiluhalleista tai julkisista rakennuksista jopa vuorokauden
+            varoajalla.
+          </p>
+        </div>
+      </div>
+      <div class="person">
         <img src="img/services/happy-builder.png" alt="" />
       </div>
     </div>
@@ -335,16 +334,45 @@
       Tarjoamme ilmaisen konsultoinnin ja tarjouksen. Ota yhteyttä niin voimme
       yhdessä karkoittaa teidän tarpeet
     </div>
-    <div>KT-Tasotyöt</div>
-    <div>Tammistonkatu 7 B 19 - 01520 - VANTAA</div>
-    <div>Y-tunnus 2349306-3</div>
-    <div>
-      <img src="img/icons/puhelin.png" alt="" />
-      045 647 5688
-    </div>
-    <div>
-      <img src="img/icons/email.png" alt="" />
-      kt.tasotyot.oy@gmail.com
+
+    <div class="slideshow">
+      <div class="section">
+        <div>KT-Tasotyöt</div>
+        <div>Tammistonkatu 7 B 19 - 01520 - VANTAA</div>
+        <div>Y-tunnus 2349306-3</div>
+        <div>
+          <img src="img/icons/puhelin.png" alt="" />
+          045 647 5688
+        </div>
+        <div>
+          <img src="img/icons/email.png" alt="" />
+          kt.tasotyot.oy@gmail.com
+        </div>
+      </div>
+
+      <!-- <div class="section">
+        <form action="">
+          <fieldset class="contact-form">
+            <legend>Ota yhteyttä!</legend>
+            <div class="name field">
+              <label for="your-name" class="name-label">Etu- ja sukunimi</label>
+              <input type="text" id="your-name" class="name-input">
+            </div>
+            <div class="email field">
+              <label for="email" class="email-label">Sähköposti</label>
+              <input type="email" id="email" class="email-input">
+            </div>
+            <div class="phone field">
+              <label for="phone" class="phone-label">Puhelinnumero</label>
+              <input type="text" id="phone" class="phone-input">
+            </div>
+            <div class="message field">
+              <label for="message" class="message-label">Viesti</label>
+              <textarea id="message" class="message-input"></textarea>
+            </div>
+          </fieldset>
+        </form>
+      </div> -->
     </div>
   </div>
   <script src="app.js"></script>

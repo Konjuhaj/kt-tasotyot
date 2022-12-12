@@ -1,0 +1,9 @@
+a,
+button,
+div {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-style: var(--body-font-style);
+  line-height: var(--h2-line-height);
+  font-weight: var(--h1-font-weight);
+}

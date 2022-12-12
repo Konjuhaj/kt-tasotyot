@@ -5,21 +5,35 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Saumaus</title>
-	<link rel="stylesheet" href="../style.css" />
-	<link rel="stylesheet" href="../style-v2.css" />
+	<link rel="stylesheet" href="../styles/base.css" />
+	<link rel="stylesheet" href="../styles/header.css">
+	<link rel="stylesheet" href="../styles/typography.css">
+	<link rel="stylesheet" href="../styles/slider.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Hammersmith+One" />
 	<script defer src="../reference.js"></script>
 </head>
 
 <body>
 	<div class="header">
 		<div class="logo">
-			<a href="../index.html">
+			<a href="index.html">
 				<img src="../img/kt-tasotyot2.png" alt="small-logo" />
 			</a>
 		</div>
+		<ul>
+			<li>
+				<a href="../index.html">Home</a>
+			</li>
+			<li>
+				<a class="current" href="pages/references.html">Referenssit</a>
+			</li>
+			<li>
+				<a href="#footer">Ota yhteyttä</a>
+			</li>
+		</ul>
 	</div>
 	<div class="hero section">
-		<img src="../img/services/julkissivupesu_2.jpeg" alt="">
 		<div class="subtext">
 			Referenssit
 		</div>
@@ -39,9 +53,11 @@
 				<div class="img-comp-img">
 					<img width="800px" height="600px" src="../img/references/ref_1_after.jpeg" alt="">
 				</div>
-				<!-- <div class="img-comp-slider" style="top:300px; left:400px;"></div> -->
 				<div class="img-comp-img img-comp-overlay">
 					<img width="800px" height="600px" src="../img/references/ref_1_before.jpeg" alt="">
+				</div>
+				<div class="before-after">
+					<h1>Alebrtinkatu 1, 00100 Helsinki</h1>
 				</div>
 			</div>
 		</div>
@@ -50,7 +66,38 @@
 		</div>
 	</div>
 
-	<div class="footer section">
+	<div class="section">
+		<div class="title">
+			Taloyhtiöt ja Referenssit
+			<div class="underline"></div>
+		</div>
+		<div class="reference-wrapper">
+			<ul>
+				<li>
+					<div class="address">As OY Siriuksenkuja 14 Vanta</div>
+					<div>Märkä tilojen remontti</div>
+					<div class="squares">190m²</div>
+				</li>
+				<li>
+					<div class="address">As Oy Martanpeneger Helsinki</div>
+					<div>Märkätilojen remontti</div>
+					<div class="squares">140m²</div>
+				</li>
+				<li>
+					<div class="address">As Oy Untamalanpuisto Helsinki</div>
+					<div>Märkätilojen remontti</div>
+					<div class="squares">55m²</div>
+				</li>
+				<li>
+					<div class="address">As OY Pohjoiskaari 22 Helsinki</div>
+					<div>Märkätilojen remontti</div>
+					<div class="squares">100m²</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer section" id="footer">
 		<div class="title">
 			Ota yhteyttä
 			<div class="spacer"></div>

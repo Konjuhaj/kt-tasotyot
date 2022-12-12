@@ -1,0 +1,263 @@
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.about-us img {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 1475px) {
+  .content-wrapper {
+    flex-wrap: wrap;
+  }
+  .content .subtext {
+    text-align: center;
+  }
+}
+
+.content-wrapper .content {
+  max-width: 800px;
+}
+
+/* ----------------------------------------------->>>> other services */
+
+.surface-repair {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding-bottom: 0;
+}
+
+.surface-repair .icon {
+  border-color: var(--color-primary);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "content1 content2 person"
+    "content3 content4 person";
+}
+
+.icon {
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.icon > img {
+  width: 70%;
+}
+
+.content-wrap {
+  padding-left: 130px;
+  text-align: left;
+}
+
+.service-content1 {
+  grid-area: content1;
+}
+
+.service-content2 {
+  grid-area: content2;
+}
+
+.service-content3 {
+  grid-area: content3;
+}
+
+.service-content4 {
+  grid-area: content4;
+}
+
+.person {
+  grid-area: person;
+  align-self: end;
+}
+
+@media (max-width: 1475px) {
+  .grid-container {
+    gap: var(--grid-gap-spacing);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content1"
+      "content2"
+      "content3"
+      "content4"
+      "person";
+  }
+}
+
+/* --------------------------------------------------->> recommendations */
+.recommendation {
+  background-image: url("img/services/recommendation.jpeg");
+  background-attachment: fixed;
+  position: relative;
+  gap: 0px;
+  background-color: black;
+  width: auto;
+  margin: 0;
+  z-index: 0;
+}
+
+.recommendation::after {
+  position: absolute;
+  content: "\A";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.info {
+  letter-spacing: 0.2em;
+  font-weight: 200;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 0;
+}
+
+/* --------------------------------------------------->> references */
+
+.wrapper div a::after {
+  position: absolute;
+  content: "\A";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: 0;
+}
+
+.wrapper div:hover a::after {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper div h3 {
+  color: var(--font-color-light);
+  position: absolute;
+  transform: translateY(-70px);
+  font-size: 800;
+  transition: 0.4s;
+  opacity: 0%;
+  z-index: 1;
+}
+
+.wrapper div:hover h3 {
+  transform: translateY(0);
+  opacity: 100%;
+}
+
+.wrapper div a img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.wrapper > a {
+  margin: auto;
+  text-decoration: none;
+  color: var(--font-color-dark);
+  font-size: larger;
+  padding: 12px 24px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.wrapper .wrapper-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  margin: auto;
+}
+
+/* --------------------------------------------------->>SERVICES SECTION */
+
+.items > div {
+  display: inline;
+  width: 100%;
+  height: 400px;
+}
+
+.items > div:nth-child(1) {
+  background-image: url("../img/services/Saumaus.jpeg");
+  background-size: cover;
+}
+
+.items > div:nth-child(2) {
+  background-image: url("../img/services/julkissivupesu_2.jpeg");
+  background-size: cover;
+}
+
+.items > div:nth-child(3) {
+  background-image: url("../img/services/rappaus.jpeg");
+  background-size: cover;
+}
+
+.service a {
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: flex-end;
+  text-decoration: none;
+  color: white;
+}
+
+.service > a > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: rgba(251, 154, 35, 0.7);
+}
+
+.service > a > div > div {
+  text-shadow: 2px 2px black;
+  font-weight: 400;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+}
