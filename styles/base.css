@@ -95,6 +95,7 @@ a {
   font-style: var(--h1-font-style);
   font-weight: var(--h1-font-weight);
   letter-spacing: var(--h1-letter-spacing);
+  animation: fadeIn 2s;
 }
 
 .section {

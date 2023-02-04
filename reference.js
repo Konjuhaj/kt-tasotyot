@@ -9,28 +9,44 @@ while (i <= 4) {
   i = i + 1;
 }
 
-function getImageContainer(index) {
-  let imageContainer = document.createElement("div");
-  imageContainer.classList.add("image-comp-container");
+function createHTMLElement(type, innerText, ...classes) {
+  let element = document.createElement(type);
+  if (classes !== undefined) {
+    classes.forEach((classToAdd) => element.classList.add(classToAdd));
+  }
+  if (innerText !== undefined) {
+    element.innerText = innerText;
+  }
+  return element;
+}
 
-  let comparisonText = document.createElement("div");
-  comparisonText.classList.add("before-after");
-  let beforeText = document.createElement("h1");
-  let afterText = document.createElement("h1");
-  beforeText.innerText = "Ennen";
-  afterText.innerText = "Jälkeen";
-  comparisonText.appendChild(beforeText);
-  comparisonText.appendChild(afterText);
+function appendChildElements(element, ...args) {
+  args.forEach((arg) => element.appendChild(arg));
+}
+
+function getImageContainer(index) {
+  let imageContainer = createHTMLElement("div", null, "image-comp-container");
+
+  let comparisonText = createHTMLElement("div", null, "before-after");
+  let beforeText = createHTMLElement("h1", "Ennen");
+  let afterText = createHTMLElement("h1", "Jälkeen");
+  appendChildElements(comparisonText, beforeText, afterText);
   imageContainer.appendChild(comparisonText);
 
-  let address = document.createElement("div");
-  address.classList.add("address-line");
-  address.innerText = "Alberinkatu 1, 00100 Helsinki";
+  let address = createHTMLElement(
+    "div",
+    "Alberinkatu 1, 00100 Helsinki",
+    "address-line"
+  );
 
-  let imageBefore = document.createElement("div");
-  imageBefore.classList.add("img-comp-img");
-  imageBefore.classList.add("img-comp-overlay");
+  let imageBefore = createHTMLElement(
+    "div",
+    null,
+    "img-comp-img",
+    "img-comp-overlay"
+  );
   let beforeImage = document.createElement("img");
+
   beforeImage.src = "../img/references/ref_" + index + "_before.jpeg";
   beforeImage.setAttribute("width", "400px");
   beforeImage.setAttribute("height", "300px");

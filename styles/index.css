@@ -261,3 +261,14 @@
   row-gap: 30px;
   width: 100%;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
