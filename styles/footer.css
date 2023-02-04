@@ -71,6 +71,11 @@ textarea:focus {
   justify-content: end;
 }
 
+input[type="submit"] {
+  background-color: var(--color-secondary);
+  border-color: black;
+}
+
 .slideshow {
   display: flex;
   flex-direction: row;
