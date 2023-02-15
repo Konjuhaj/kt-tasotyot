@@ -1,8 +1,8 @@
 .container {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
   font-size: small;
   width: 100%;
@@ -104,12 +104,22 @@
   height: 100px; */
 }
 
+.content-wrap p {
+  font-size: 20px;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
 /* .icon {
   height: 150px;
   width: 150px;
   text-align: center;
 } */
-
+/*
 @media (max-width: 1475px) {
   .container {
     display: block;
@@ -122,4 +132,4 @@
   .container .card .face.face1 {
     margin-bottom: 30px;
   }
-}
+} */
