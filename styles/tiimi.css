@@ -1,0 +1,40 @@
+.tiimi {
+  background: #191919;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.tiimi-card {
+  border: solid orange 1px;
+  border-radius: 15px;
+  background: #121212;
+
+  height: 300px;
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tiimi-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.tiimit h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.tiimi p {
+  font-size: 12px;
+  font-weight: 300;
+}
