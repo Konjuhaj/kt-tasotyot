@@ -232,7 +232,7 @@
   background-size: cover;
 }
 
-.service a {
+.items .service a {
   display: flex;
   height: 100%;
   width: auto;
@@ -241,7 +241,7 @@
   color: white;
 }
 
-.service > a > div {
+.items .service > a > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -250,7 +250,7 @@
   background-color: rgba(251, 154, 35, 0.7);
 }
 
-.service > a > div > div {
+.items .service > a > div > div {
   text-shadow: 2px 2px black;
   font-weight: 400;
 }
